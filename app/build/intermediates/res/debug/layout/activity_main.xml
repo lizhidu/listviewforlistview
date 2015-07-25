@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请叫我雷锋"
+        android:textSize="20sp"
+        />
+    
+	<com.example.asdfdsf.MultiDirectionSlidingDrawer 
+	    xmlns:my="http://schemas.android.com/apk/res/com.example.asdfdsf"
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content"
+        my:direction="leftToRight"
+        my:handle="@+id/handle"
+	    >
+	    
+    <ListView 
+        android:id="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_list_item"
+        android:scrollbars="none"
+        ></ListView>
+    
+     <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/re_prduct_pan_toggle" />
+    
+    
+</com.example.asdfdsf.MultiDirectionSlidingDrawer>
+
+</RelativeLayout><!-- From: file:/H:/MList嵌套list/app/src/main/res/layout/activity_main.xml -->
